@@ -176,3 +176,327 @@
     
 </body>
 </html>
+
+
+
+<body>
+    <div class="main">
+        <div class="left-main">
+            <div class="top">
+                <div class="green-icon">
+                    <i class="fa-brands fa-windows"></i>
+                </div>
+                <div class="solargy">
+                    <p>Solar <br>
+                    Dashboard</p>
+                </div>
+                <div class="powered">
+                    <p>powered by <br>
+                    sheet Global</p>
+                </div>
+            </div>
+            <button class="yellow yellowh5"><i class="fa-solid fa-folder-minus"></i><h5>Dashboard</h5></button><br>
+            <button class="yellowh5"><i class="fa-solid fa-user"></i> <h5>Profile Setting</h5></button><br>
+            <button class="yellowh5"><i class="fa-solid fa-right-from-bracket"></i><h5>Logout</h5></button>
+        </div>
+        <div class="right-main">
+            <div class="upper-section">
+                <div class="left-upper-section">
+                    <h1>welcome <br>
+                        Ritik Sah </h1>
+                </div>
+                <div class="right-upper-section">
+                    <div class="box1">
+                        <h3>Monthly overview <br>
+                            <span>(in KW)</span>
+                        </h3>
+                    </div>
+                    <div class="box2">
+                        <h4>Energy Generation</h4>
+                    </div>
+                    <div class="box2">
+                        <h4>Energy Consumption</h4>
+                    </div>
+                    <div class="box2">
+                        <h4>Export to Grid</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-section">
+                <div class="left-graph-section">
+                    <p>Solar Generation & Consumption</p>
+                    <div class="blank-page"></div>
+                </div>
+                <div class="right-graph-section">
+                    <div class="dropdown">
+                        <label for="year">Current year</label>
+                        <select name="year" id="year">
+                            <!-- <option value=" "></option> -->
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2020</option>
+                          </select>
+                    </div>
+                    <div class="energy_gen">
+                        <p>Energy Generation</p>
+                        <h2>1566.00</h2>
+                        <h2>kwh</h2>
+                    </div>
+                    <div class="energy_gen">
+                        <p>Energy Consumption</p>
+                        <h2>974.40</h2>
+                        <h2>kwh</h2>
+                    </div>
+                </div>
+                <div class="corner-section">
+                    <div class="blue-box">
+                        <h4>Daily (kw)</h4>
+                        <div class="inner">
+                            <div class="left-blue-box">
+                                <p>5.5</p>
+                                <p>Min</p>
+                            </div>
+                        <div class="right-blue-box">
+                            <p>5.9</p>
+                            <p>Max  </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="blue-box">
+                        <h4>Daily (kw)</h4>
+                        <div class="inner">
+                            <div class="left-blue-box">
+                                <p>5.5</p>
+                                <p>MIN</p>
+                            </div>
+                        <div class="right-blue-box">
+                            <p>5.9</p>
+                            <p>MAX</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+   <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            background-color: lightgray;
+            display: flex;
+        }
+
+        .left-main {
+            height: 100%;
+            width: 25%;
+            background-color: #fff;
+        }
+        .top{
+            height: 50px;
+            width: 90%;
+            /* background-color: lightsalmon; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+        }
+        .top p{
+            font-weight:800;
+        }
+        button{
+            margin-top: 30px;
+            height: 50px;
+            width: 300px;
+            border-radius: 12px;
+            border: none;
+        }
+        .yellow{
+            background-color:goldenrod;
+            
+        }
+        .fa-user{
+            margin-left: -40px;
+        }
+        .fa-folder-minus{
+            margin-left: -60px;
+        }
+        .fa-right-from-bracket{
+            margin-left: -110px;
+        }
+        .yellowh5 h5{
+            display: inline-block;
+            /* padding: 0; */
+            margin-left: 30px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        
+        .right-main {
+            height: 100%;
+            width: 70%;
+            
+        }
+
+        .upper-section {
+            height: 110px;
+            width: 90%;
+            margin: 40px 0px 0px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .left-upper-section {
+            height: 100%;
+            width: 220px;
+           
+
+        }
+
+        .right-upper-section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .right-upper-section .box1{
+            padding: 15px;
+            background-color: rgba(242, 95, 37, 0.743);
+        }
+        .right-upper-section .box2 {
+            height: 100%;
+            width: 185px;
+            background-color: white;
+        }
+        .right-upper-section  .box2 h4{
+            text-align: center;
+            margin-top: 40px;
+            
+        }
+        .graph-section{
+            width: 96%;
+            background-color: #fff;
+            height: 65%;
+            margin-left: 30px;
+            margin-top: 30px;
+            display: flex;
+        }
+        .left-graph-section{
+            width: 60%;
+        }
+        .left-graph-section p{
+            padding: 15px;
+            /* padding-right: 0; */
+            font-size: 25px;
+        }
+        .blank-page{
+            height: 60%;
+            width: 90%;
+            background-color: lightgray;
+            margin-left: 15px;
+        }
+        .right-graph-section{
+            width: 24%;
+            /* background-color: aqua; */
+            margin-left: -40px;
+        }
+        .dropdown{
+            margin: 50px 0px 0px 50px;
+        }
+        #year{
+            width: 10px;
+            /* background-color:rebeccapurple; */
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .energy_gen{
+            margin-top: 60px;
+            margin-left: 37px;
+        }
+        .energy_gen p{
+            font-size: 20px;
+        }
+        .energy_gen h2{
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        .corner-section{
+            width: 20%;
+            /* background-color: cornflowerblue; */
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content:center;
+            
+
+        }
+        
+        .blue-box{
+            height: 100px;
+            width: 150px;
+            background-color: rgb(66, 176, 244);
+            margin-left: 20px;
+            /* display: flex; */
+            /* margin: 70px; */
+        }
+        .blue-box h4{
+            background-color:rgb(66, 176, 244) ;
+            margin-top: 0px;
+            margin-left: 40px;
+        }
+        .inner{
+            width: 100%;
+            display: flex;
+        }
+        .left-blue-box{
+            height: 100%;
+            width: 50%;
+            /* background-color:red; */
+            margin-top: -20px;
+        }
+        .right-blue-box{
+            height: 100%;
+            width: 50%;
+            /* background-color:gray; */
+            margin-top: -20px;
+        }
+        .left-blue-box p{
+            margin-left: 10px;
+        }
+        
+        /* .green-icon{
+            height: 60px;
+            width: 60px;
+            background-color: lightseagreen;
+            border-radius: 50%;
+        } */
+        
+        
+    </style>
+
+    
